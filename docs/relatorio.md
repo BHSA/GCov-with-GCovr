@@ -11,7 +11,7 @@ O projeto foi desenvolvido e executado no seguinte ambiente:
 - **Sistema operacional:** Ubuntu 24.04.3 LTS  
 - **Plataforma:** WSL 2 (Windows Subsystem for Linux)
 
-### Passo 1 — Instalação das Dependências
+### 1 — Instalação das Dependências
 
 #### 1.1 Clonar repositório desse projeto
 
@@ -74,13 +74,16 @@ Até que seja exibida a mensagem:
 
 ```=== Fim dos testes ===```
 
+## Utilização do gcovr
+
 Por fim, utilizamos finalmente a ferramenta de Code Coverage ```gcovr``` que pode invocada de comandos com disposições de parâmetros diversas. Dentre elas, selecionamos algumas para fins demonstração.
 
 
-##### Mínima: ```gcovr```
+### Mínima: ```gcovr```
 
 Dessa maneira, teremos a seguinte saída:
 
+```c[
 ------------------------------------------------------------------------------
                            GCC Code Coverage Report
 Directory: .
@@ -91,13 +94,13 @@ cambio.c                                      13      13   100%
 test_cambio.c                                 14      14   100%
 ------------------------------------------------------------------------------
 TOTAL                                         27      27   100%
-------------------------------------------------------------------------------
+------------------------------------------------------------------------------]
 
-##### Mínima em arquivo .html: ```gcovr --html -o ./docs/coverage_gcovr_full.html```
+### Mínima em arquivo .html: ```gcovr --html -o ./docs/coverage_gcovr_full.html```
 
 Com essa configuração, serão exibidos dados de cobertura em linhas, funções e branches em valor absoluto e percentual.
 
-##### Em arquivo .html detalhado: ```gcovr --html-details -o ./docs/coverage_gcovr_full.html```
+### Em arquivo .html detalhado: ```gcovr --html-details -o ./docs/coverage_gcovr_full.html```
 
 Com essa configuração, serão exibidos dados de cobertura em linhas, funções e branches em valor absoluto e percentual. Entretando, agora são adicionadas:
 
@@ -105,7 +108,7 @@ Com essa configuração, serão exibidos dados de cobertura em linhas, funções
 
 - Os nomes de arquivos se tornam clicáveis: permitindo verificar a cobertura linha a linha e detalhamentos de quantas vezes cada linha e branch foi executados.
 
-##### Formato mais completo em .html: ```gcovr -r . --html-details --branches --decisions --calls   --sort uncovered-number --sort-reverse   --html-single-page js-enabled --html-self-contained --html-block-ids   -o ./docs/coverage_gcovr_full.html -v```
+### Formato mais completo em .html: ```gcovr -r . --html-details --branches --decisions --calls   --sort uncovered-number --sort-reverse   --html-single-page js-enabled --html-self-contained --html-block-ids   -o ./docs/coverage_gcovr_full.html -v```
 
 Para fins de exemplo foi utilizado esse comando mais extremo, gerando dos relatórios mais completos pode ser obtido com o código acima em formato .html. Nesse caso, cada um dos parâmetros implementa:
 
