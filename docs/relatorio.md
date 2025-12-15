@@ -83,7 +83,7 @@ Por fim, utilizamos finalmente a ferramenta de Code Coverage ```gcovr``` que pod
 
 Dessa maneira, teremos a seguinte saída:
 
-```c[
+```c
 ------------------------------------------------------------------------------
                            GCC Code Coverage Report
 Directory: .
@@ -94,7 +94,9 @@ cambio.c                                      13      13   100%
 test_cambio.c                                 14      14   100%
 ------------------------------------------------------------------------------
 TOTAL                                         27      27   100%
-------------------------------------------------------------------------------]
+------------------------------------------------------------------------------
+
+```
 
 ### Mínima em arquivo .html: ```gcovr --html -o ./docs/coverage_gcovr_full.html```
 
