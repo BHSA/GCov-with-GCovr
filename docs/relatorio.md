@@ -115,16 +115,27 @@ Com essa configuração, serão exibidos dados de cobertura em linhas, funções
 Para fins de exemplo foi utilizado esse comando mais extremo, gerando dos relatórios mais completos pode ser obtido com o código acima em formato .html. Nesse caso, cada um dos parâmetros implementa:
 
 ```--html-details``` : inclui código anotado (linhas com hits/faltantes).
+
 ```--branches / --txt-metric branch``` : inclui cobertura de branches.
+
 ```--decisions``` : inclui decision coverage (quando aplicável).
+
 ```--calls``` : mostra coverage de chamadas.
+
 ```--sort uncovered-number|uncovered-percent --sort-reverse``` : ordena por pior cobertura.
+
 ```--html-single-page js-enabled``` : tudo em um único arquivo interativo.
+
 ```--html-self-contained``` : gera um HTML autossuficiente (embute CSS/JS).
+
 ```--html-block-ids``` : adiciona IDs de blocos para debugging de branch coverage.
+
 ```-r .``` ou ```--root``` : define raiz para caminhos de fonte.
+
 ```-i/--include``` : garantir inclusão de arquivos mesmo sem dados.
+
 ```--gcov-executable / --object-directory``` : quando gcov/gcda estão em lugares diferentes.
+
 ```-v/--verbose``` : ver logs detalhados.
 
 Mais informações a respeito de parâmetros e podem ser verificados através do comando ```gcovr --help``` ou na documentação oficial, disponível em: <http://gcovr.com/>
