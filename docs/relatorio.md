@@ -20,18 +20,23 @@ O projeto foi desenvolvido e executado no seguinte ambiente:
 #### 1.2 Atualizar repositórios e instalar ferramentas básicas
 
 ```sudo apt update```
+
 ```sudo apt install build-essential -y```
 
 #### 1.3 Verificar as instalações
 
 ```gcc --version```
+
 ```g++ --version```
+
 ```python3 --version```
+
+```sudo apt install python3-pip```
 
 #### 1.4 Instalar gcovr e dependências
 
 ```sudo apt install gcovr```
-```sudo apt install python3-pip```
+
 ```pip3 install --upgrade gcovr --break-system-packages```
 
 ### Passo 2 — Implementação
@@ -138,4 +143,29 @@ Para fins de exemplo foi utilizado esse comando mais extremo, gerando dos relat�
 
 ```-v/--verbose``` : ver logs detalhados.
 
+## Estrutura de Arquivos Esperada (Após execução)
+
+```
+GCOV-WITH-GCOVR/
+├── README.md                             # Documentação principal do projeto
+├── cambio.c                              # Código fonte do sistema sob teste (SUT)
+├── test_cambio.sh                        # Executável dos testes compilado
+├── test_cambio.sh-cambio.gcda            # Dados de execução do arquivo cambio.c
+├── test_cambio.sh-cambio.gcno            # Informações do grafo de fluxo de cambio.c
+├── test_cambio.sh-test_cambio.gcda       # Dados de execução do arquivo test_cambio.c
+├── test_cambio.sh-test_cambio.gcno       # Informações do grafo de fluxo de test_cambio.c
+└── docs/
+    ├── coverage_gcovr_full.html          # Relatório HTML de cobertura gerado pelo gcovr
+    └── relatorio.md                      # Documento de referência do repositório
+```
+
 Mais informações a respeito de parâmetros e podem ser verificados através do comando ```gcovr --help``` ou na documentação oficial, disponível em: <http://gcovr.com/>
+
+
+## Recursos Adicionais
+
+Documentação oficial do gcovr - Disponível em: http://gcovr.com/
+
+GCC Coverage Documentation - Disponível em: https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html
+
+LCOV (Ferramenta Alternativa) - Disponível em: https://github.com/linux-test-project/lcov
