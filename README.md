@@ -15,7 +15,7 @@ Este repositório contém um exemplo mínimo (função `cambio`) e uma suíte de
 GCOV-WITH-GCOVR/
 ├── README.md                             # Documentação principal do projeto
 ├── cambio.c                              # Código fonte do sistema sob teste (SUT)
-├── test_cambio.c                         # Executável dos testes compilado
+├── test_cambio.c                         # Código fonte da suíte de testes
 └── docs/
     └── relatorio.md                      # Documento de referência do repositório
 ```
