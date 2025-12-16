@@ -15,7 +15,7 @@ O projeto foi desenvolvido e executado no seguinte ambiente:
 
 #### 1.1 Clonar repositório desse projeto
 
-```https://github.com/BHSA/GCov-with-GCovr```
+```git clone https://github.com/BHSA/GCov-with-GCovr```
 
 #### 1.2 Atualizar repositórios e instalar ferramentas básicas
 
