@@ -149,6 +149,7 @@ Para fins de exemplo foi utilizado esse comando mais extremo, gerando dos relat�
 GCOV-WITH-GCOVR/
 ├── README.md                             # Documentação principal do projeto
 ├── cambio.c                              # Código fonte do sistema sob teste (SUT)
+├── test_cambio.c                         # Executável dos testes compilado
 ├── test_cambio.sh                        # Executável dos testes compilado
 ├── test_cambio.sh-cambio.gcda            # Dados de execução do arquivo cambio.c
 ├── test_cambio.sh-cambio.gcno            # Informações do grafo de fluxo de cambio.c
